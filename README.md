@@ -25,17 +25,17 @@ This toolset is developed to be natively cross-platform with no unreferenced dep
 
 ### Via CenturyLink Cloud package
 bpbroker is available for Linux and Windows on the CenturyLink Cloud platform via a script package.  Execute the script directly on an existing server or add it to a new Blueprint.
-These packages are public and their source is available via [this github repo](../Public Blueprint Source/BP Broker/).
+These packages are public and their source is available via [this github repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints/Public%20Blueprint%20Source/BP%20Broker).
 
 
 ### Linux Quickstart
-The installation script is available inside [this github repo](../Public Blueprint Source/BP Broker/Linux/install_bpbroker.sh).  It can be installed via the following one-liner:
+The installation script is available inside [this github repo](https://github.com/CenturyLinkCloud/Ecosystem/blob/master/Blueprints/Public%20Blueprint%20Source/BP%20Broker/Linux/install_bpbroker.sh).  It can be installed via the following one-liner:
 ```shell
 > curl https://raw.githubusercontent.com/CenturyLinkCloud/Ecosystem/master/Blueprints/Public%20Blueprint%20Source/BP%20Broker/Linux/install_bpbroker.sh | bash
 ```
 
 ### Windows Quickstart
-The current Windows scripts to not download pre-reqs but instead bundle them in. The installation script and its dependencies are available inside [this github repo](../Public Blueprint Source/BP Broker/Windows) but we recommend leveraging the [zipped package](https://raw.githubusercontent.com/CenturyLinkCloud/Ecosystem/master/Blueprints/Public Blueprint Source/BP Broker/Blueprints_Completed_Packages/Windows_bpbroker.zip).
+The current Windows scripts to not download pre-reqs but instead bundle them in. The installation script and its dependencies are available inside [this github repo](../Public Blueprint Source/BP Broker/Windows) but we recommend leveraging the [zipped package](https://raw.githubusercontent.com/CenturyLinkCloud/bpbroker/master/Blueprints/Public Blueprint Source/BP Broker/Blueprints_Completed_Packages/Windows_bpbroker.zip).
 
 Binaries are available to execute rooted out of `%programfiles%\bpbroker\bin\`.
 
