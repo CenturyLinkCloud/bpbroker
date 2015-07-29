@@ -4,6 +4,7 @@ bpmailer mailing module
 """
 
 
+import os
 import re
 import smtplib
 import premailer
@@ -24,6 +25,10 @@ cssutils.log.setLevel(logging.CRITICAL)
 class Mailer(object):
 
 	def __init__(self,template_file,to_addr,subject,css_file=None,cc_addrs=[],from_addr=None,html=False,variables={}):
+		"""
+		template_file - can be a file or a string containing the actual content
+		"""
+
 		self.css_file = css_file
 		self.subject = subject
 		self.to_addr = to_addr
@@ -31,7 +36,9 @@ class Mailer(object):
 		self.from_addr = from_addr
 		self.variables = variables
 
-		self.template = open(template_file).read()
+		if os.path.isfile(template_file):  self.template = open(template_file).read()
+		else:  self.template = str(template_file)
+
 		self.ApplyVariables()
 		self.InlineCSS()
 
